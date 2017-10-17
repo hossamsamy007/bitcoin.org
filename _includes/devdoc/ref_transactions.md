@@ -38,6 +38,7 @@ The opcodes used in the pubkey scripts of standard transactions are:
   pushes true onto the stack if they are the same, false if not.
 
 * [`OP_VERIFY`][op_verify]{:#term-op-verify}{:.term} consumes the topmost item on the stack.
+
   If that item is zero (false) it terminates the script in failure.
 
 * [`OP_EQUALVERIFY`][op_equalverify]{:#term-op-equalverify}{:.term} runs `OP_EQUAL` and then `OP_VERIFY` in sequence.
